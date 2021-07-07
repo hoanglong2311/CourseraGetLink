@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a class="navbar-brand" href="https://www.huuwang.com/" target="_blank">hq</a>
+            <div class="social-link">
+                <a href="https://www.facebook.com/danghuuwang/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/danghuuwang/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://www.huuwang.com/" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <section class="copy-link">
+        <p id="get-link-note">Click the button below to get the Coursera link.</p>
+        <div id="successful">
+            <p id="successful-status" class="status">Successfully</p>
+            <p id="copy-link-note">Getting the link successfully!<br> Click the button below to copy the Coursera link.</p>
+            <div id = "input-box"><input type="text" id="link-here" value=""></div>
+        </div>
+        <div id="error">
+            <p id="error-status" class="status">Error</p>
+            <p id="error-note">Remember that your current page should be the submission page, specifically the 'My submission' section.</p>
+        </div>
+        <div class="d-grid gap-2 col-4 mx-auto">
+            <button id="get-link-btn" class="btn btn-outline-dark">Get link</button>
+            <button id="copy-link-btn" class="btn btn-outline-dark">Copy link</button>
+            <button id="try-again-btn" class="btn btn-outline-dark">Try again</button>
+        </div>
+
+        <p id="copied"></p>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
